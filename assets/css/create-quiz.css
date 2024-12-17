@@ -1,0 +1,59 @@
+.create-quiz .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.create-quiz-form {
+  padding-top: 0;
+}
+
+.form .field {
+  margin-bottom: 10px;
+}
+
+.form .label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form .btn {
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  height: 45px;
+  margin-top: 10px;
+}
+
+textarea,
+.form .input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--black_30);
+  border-radius: 6px;
+}
+
+.form .input:focus-within {
+  border-color: var(--black);
+}
+
+textarea:is(:focus) {
+  border-color: var(--black);
+}
+
+.form .input {
+  padding-right: 10px;
+}
+
+.form .input > input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form .input > input[type="radio"] {
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,37 @@
+.play-quiz {
+  padding-top: 0;
+}
+
+.answer-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.answer-field > input[type="radio"] {
+  height: 18px;
+  width: 18px;
+}
+
+.answer-field > label {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.question-item {
+  margin-bottom: 30px;
+}
+
+.play-quiz .btn {
+  width: 100%;
+  font-size: 1.8rem;
+  border-radius: 6px;
+  margin-top: 20px;
+  height: 45px;
+}
+
+.question {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}

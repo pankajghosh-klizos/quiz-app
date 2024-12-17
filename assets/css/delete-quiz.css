@@ -1,0 +1,48 @@
+.question-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--black);
+  padding-block: 10px;
+}
+
+.question-item > h3 {
+  flex-grow: 1;
+}
+
+.delete-all,
+.delete-multiple-btn {
+  padding: 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.delete-btn {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border: 2px solid var(--red);
+  transition: 100ms ease-in-out;
+}
+
+.delete-btn:is(:hover, :focus) {
+  background-color: var(--red);
+}
+
+.delete-btn:is(:hover, :focus) > i {
+  color: var(--white);
+}
+
+.delete-btn > i {
+  color: var(--red);
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}

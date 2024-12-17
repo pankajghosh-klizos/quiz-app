@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizy • Create</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/create-quiz.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li class="nav-item" id="home">
+            <i class="fa-solid fa-house"></i>
+            <span class="title">Home</span>
+          </li>
+          <li class="nav-item active" id="quiz">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="title">Quizes</span>
+          </li>
+          <li class="nav-item" id="ranking">
+            <i class="fa-solid fa-chart-simple"></i>
+            <span class="title">Ranking</span>
+          </li>
+          <li class="nav-item" id="profile">
+            <i class="fa-solid fa-circle-user"></i>
+            <span class="title">Profile</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="root">
+      <div class="container">
+        <section class="section create-quiz">
+          <div class="heading">
+            <h1>
+              <span>Create Quiz</span>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </h1>
+          </div>
+        </section>
+        <section class="section create-quiz-form">
+          <form class="form">
+            <div class="field">
+              <label for="question" class="label">Question</label>
+              <textarea name="question" id="question"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="option1" class="label">Option 1</label>
+
+              <div class="input">
+                <input type="text" name="option1" id="option1" />
+
+                <input
+                  type="radio"
+                  name="correctAnswer"
+                  class="correctAnswer"
+                  value="option1"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="option2" class="label">Option 2</label>
+
+              <div class="input">
+                <input type="text" name="option2" id="option2" />
+
+                <input
+                  type="radio"
+                  name="correctAnswer"
+                  class="correctAnswer"
+                  value="option2"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="option3" class="label">Option 3</label>
+
+              <div class="input">
+                <input type="text" name="option3" id="option3" />
+
+                <input
+                  type="radio"
+                  name="correctAnswer"
+                  class="correctAnswer"
+                  value="option3"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="option4" class="label">Option 4</label>
+
+              <div class="input">
+                <input type="text" name="option4" id="option4" />
+
+                <input
+                  type="radio"
+                  name="correctAnswer"
+                  class="correctAnswer"
+                  value="option4"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn submit-btn">Add</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- custom js -->
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/create-quiz.js"></script>
+  </body>
+</html>
